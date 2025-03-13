@@ -9,7 +9,7 @@ public class UserTest {
     @Test
     public void getName(){
         User user = new User("Kalle","abc123");
-        assertEquals("Kalle",user.getName());
+        assertEquals("Calle",user.getName());
     }
 
     @Test

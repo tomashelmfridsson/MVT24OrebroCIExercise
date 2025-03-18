@@ -1,28 +1,30 @@
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
+
 public class UserTest {
     @Test
-    public void addUser(){
-        User user = new User("Kalle","abc123");
+    public void addUser() {
+        User user = new User("Kalle", "abc123");
     }
 
     @Test
-    public void getName(){
-        User user = new User("Kalle","abc123");
-        assertEquals("Kalle",user.getName());
+    public void getName() {
+        User user = new User("Kalle", "abc123");
+        assertEquals("Kalle", user.getName());
     }
 
     @Test
-    public void getPassword(){
-        User user = new User("Kalle","abc123");
-        assertEquals("abc123",user.getPassword());
+    public void getPassword() {
+        User user = new User("Kalle", "abc123");
+        assertEquals("abc123", user.getPassword());
     }
 
     @Test
-    public void changeName(){
-        User user = new User("Kalle","abc123");
+    public void changeName() {
+        User user = new User("Kalle", "abc123");
         user.changeName("Olle");
-        assertEquals("Olle",user.getName());
+        assertEquals("Olle", user.getName());
 
     }
 }
